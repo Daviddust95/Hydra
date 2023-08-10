@@ -6,7 +6,7 @@ Se você se conhece, mas não conhece o inimigo, para cada vitória ganha. sofre
 Nos comandos o “username” é o nome do usuário que você deseja atacar e “password_list.txt” é o nome do arquivo de lista de senhas que você deseja usar para o ataque. O “target_ip” é o endereço IP do servidor que você deseja atacar.
 
 
-Força bruta em SSH
+Força bruta em SSH:
 
 hydra -l username -P password_list.txt ssh://target_ip 
 

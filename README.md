@@ -1,4 +1,4 @@
-# Pentesting com Hydra - Guia Educacional
+#Projeto de Pentesting com Hydra - Guia Educacional
 
 Este repositório é criado estritamente para fins educacionais.
 

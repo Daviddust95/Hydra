@@ -17,13 +17,13 @@ Se o Hydra estiver instalado, ele mostrará a versão. Se não estiver instalado
 
 ## 2. Instale as dependências: O Hydra requer algumas bibliotecas e pacotes para funcionar corretamente. Para instalá-las, você pode usar o gerenciador de pacotes do seu sistema. Abaixo estão os comandos para instalar as dependências em sistemas populares:
 
-Para sistemas baseados no Debian (como o Ubuntu):
+1. ### Para sistemas baseados no Debian (como o Ubuntu):
 -  ```bash
     sudo apt update
 -  ```bash
     sudo apt install libssl-dev libssh-dev libidn11-dev libpcre3-dev libgtk2.0-dev libmysqlclient-dev libpq-dev libsvn-dev libncp-dev
   
-  **Para sistemas baseados no Red Hat (como o CentOS e o Fedora):**
+2. ### Para sistemas baseados no Red Hat (como o CentOS e o Fedora):
 -  ```bash
     sudo yum install openssl-devel libssh-devel libidn-devel pcre-devel gtk2-devel mysql-devel postgresql-devel subversion-devel libncp-devel
 
@@ -44,12 +44,12 @@ Para sistemas baseados no Debian (como o Ubuntu):
 Após a instalação, você pode verificar se o Hydra está funcionando corretamente executando o comando:
 -  ```bash
     hydra --version
-4. ## Comandos Básicos do Hydra
+## 4. Comandos Básicos do Hydra
 <justify>
 Nos comandos o “username” é o nome do usuário que você deseja atacar e “password_list.txt” é o nome do arquivo de lista de senhas que você deseja usar para o ataque. O “target_ip” é o endereço IP do servidor que você deseja atacar.
 </justify>
-4.1 Força Bruta em FTP:
 
+4.1 Força Bruta em FTP:
 -  ```bash
     hydra -l username -P password_list.txt ftp://target_ip
 4.2 Força Bruta em HTTP:

